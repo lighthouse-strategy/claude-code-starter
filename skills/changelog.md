@@ -1,6 +1,6 @@
 ---
 name: changelog
-description: 生成更新日志 — 从 Git 提交历史自动生成格式化的 CHANGELOG
+description: 当用户想生成更新日志、写 CHANGELOG、整理版本记录时使用 — 从 Git 提交历史自动生成 CHANGELOG
 ---
 
 # 生成更新日志

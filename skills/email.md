@@ -1,6 +1,6 @@
 ---
 name: email
-description: 添加邮件功能 — 为项目集成邮件发送，支持注册验证、通知和营销邮件
+description: 当用户想发邮件、加邮件验证、发通知邮件、集成 Resend/SendGrid 时使用 — 为项目添加邮件发送功能
 ---
 
 # 添加邮件功能

@@ -1,6 +1,6 @@
 ---
 name: database
-description: 连接数据库 — 为项目配置数据库连接，创建数据模型和基本的增删改查
+description: 当用户想连数据库、存数据、建表、做数据模型、配置 SQLite/PostgreSQL/Supabase 时使用 — 配置数据库连接并生成增删改查
 ---
 
 # 连接数据库

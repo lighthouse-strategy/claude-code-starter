@@ -1,6 +1,6 @@
 ---
 name: migrate
-description: 数据迁移 — 在不同格式之间转换数据，如 CSV 转 JSON、数据库迁移、API 数据导入
+description: 当用户想转换数据格式、CSV 转 JSON、迁移数据库、导入导出数据时使用 — 在不同格式和系统之间迁移数据
 ---
 
 # 数据迁移

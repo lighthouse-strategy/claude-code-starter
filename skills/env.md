@@ -1,6 +1,6 @@
 ---
 name: env
-description: 配置环境变量 — 创建 .env 文件模板，配置 .gitignore，生成环境变量文档
+description: 当用户想管理环境变量、创建 .env 文件、配置 API Key 时使用 — 扫描项目生成 .env 模板和文档
 ---
 
 # 配置环境变量

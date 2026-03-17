@@ -1,6 +1,6 @@
 ---
 name: gitsetup
-description: 配置 Git 仓库 — 初始化 Git、配置 .gitignore、创建 GitHub 仓库并推送
+description: 当用户想初始化 Git、配置 .gitignore、创建 GitHub 仓库、首次推送代码时使用 — 从零配置 Git 到推送 GitHub
 ---
 
 # 配置 Git 仓库

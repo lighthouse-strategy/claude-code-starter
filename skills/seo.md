@@ -1,6 +1,6 @@
 ---
 name: seo
-description: 优化 SEO — 检查并优化网站的搜索引擎表现，添加 meta 标签、sitemap 和结构化数据
+description: 当用户想优化 SEO、提升搜索排名、添加 meta 标签、生成 sitemap 时使用 — 检查并优化搜索引擎表现
 ---
 
 # 优化 SEO

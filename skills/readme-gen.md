@@ -1,6 +1,6 @@
 ---
 name: readme
-description: 生成 README — 为项目自动生成专业的 README.md，包含安装、使用和贡献指南
+description: 当用户想写 README、生成项目文档、补充项目说明时使用 — 自动从代码中提取生成专业 README
 ---
 
 # 生成 README

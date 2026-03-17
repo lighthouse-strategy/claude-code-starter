@@ -1,6 +1,6 @@
 ---
 name: install-plugins
-description: 安装推荐插件 — 一键安装精选的 Claude Code 社区插件，增强开发体验
+description: 当用户想安装插件、增强 Claude Code 功能、配置开发环境时使用 — 一键安装精选的社区插件
 ---
 
 # 安装推荐插件

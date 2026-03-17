@@ -1,6 +1,6 @@
 ---
 name: component
-description: 生成组件 — 快速生成可直接使用的 UI 组件，如登录表单、导航栏、定价页等
+description: 当用户想做导航栏、卡片、弹窗、侧边栏、定价页等 UI 组件时使用 — 生成可直接使用的 UI 组件
 ---
 
 # 生成 UI 组件

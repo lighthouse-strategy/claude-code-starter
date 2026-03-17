@@ -1,6 +1,6 @@
 ---
 name: setup
-description: 交互式配置 CLAUDE.md — 通过问答自动填写项目信息，替换所有占位符
+description: 当用户首次使用模板、想配置项目信息、需要填写 CLAUDE.md 占位符时使用 — 通过问答自动填写项目信息
 ---
 
 # 项目初始化配置

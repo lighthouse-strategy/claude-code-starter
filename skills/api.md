@@ -1,6 +1,6 @@
 ---
 name: api
-description: 生成 API 接口 — 根据需求快速生成 RESTful API 端点，包含路由、验证和错误处理
+description: 当用户想写接口、创建 API、生成后端端点、做增删改查接口时使用 — 生成 RESTful API 端点，包含路由、验证和错误处理
 ---
 
 # 生成 API 接口

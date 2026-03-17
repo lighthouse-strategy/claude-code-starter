@@ -1,6 +1,6 @@
 ---
 name: commit
-description: 安全提交代码 — 自动检查代码规范、扫描敏感信息、生成规范的 commit message
+description: 当用户想提交代码、git commit、推送更改时使用 — 自动检查代码规范、扫描敏感信息、生成规范的 commit message
 ---
 
 # 安全提交流程

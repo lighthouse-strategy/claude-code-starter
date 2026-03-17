@@ -1,6 +1,6 @@
 ---
 name: deploy
-description: 部署引导 — 根据项目类型引导用户完成网站部署上线的全过程
+description: 当用户想部署上线、发布网站、把项目放到服务器上时使用 — 全程引导完成部署，支持 Vercel/Netlify/Cloudflare Pages
 ---
 
 # 部署引导

@@ -1,6 +1,6 @@
 ---
 name: payment
-description: 添加支付功能 — 集成 Stripe 支付，支持一次性付款和订阅
+description: 当用户想加支付、收款、集成 Stripe、做订阅付费时使用 — 集成 Stripe 支付，支持一次性和订阅
 ---
 
 # 添加支付功能
