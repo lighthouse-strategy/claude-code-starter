@@ -55,7 +55,7 @@ if [ -z "$SKIP_CLAUDE_MD" ]; then
 fi
 
 # 下载 skills
-info "下载 37 个 Skills..."
+info "下载 Skills..."
 SKILLS=(
     a11y api auth blog changelog code-review commit compare
     component concept copy dashboard-admin database debug deploy doc
@@ -72,7 +72,7 @@ for skill in "${SKILLS[@]}"; do
         SKILL_COUNT=$((SKILL_COUNT + 1))
     fi
 done
-info "已下载 $SKILL_COUNT 个 Skills 到 .claude/skills/"
+info "已下载 $SKILL_COUNT/${#SKILLS[@]} 个 Skills 到 .claude/skills/"
 
 # 下载 global-CLAUDE.md（可选）
 echo ""

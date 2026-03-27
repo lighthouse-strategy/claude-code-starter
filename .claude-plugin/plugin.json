@@ -1,6 +1,6 @@
 {
   "name": "claude-code-starter",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "description": "Claude Code starter kit: CLAUDE.md templates, 37 Skills, 5 Commands, 4 Agents, Hooks for Chinese-speaking developers",
   "author": {
     "name": "lighthouse-strategy",

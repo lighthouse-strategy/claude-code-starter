@@ -30,9 +30,12 @@ for pattern in "${dangerous_patterns[@]}"; do
     fi
 done
 
-# 检查 force push 到 main/master
-if echo "$cmd" | grep -qE 'git push.*(--force|-f).*(main|master)'; then
-    echo "BLOCKED: Force push to main/master is not allowed"
+# 检查 force push 到 main/master（排除安全的 --force-with-lease）
+if echo "$cmd" | grep -qE 'git push' && \
+   echo "$cmd" | grep -qE '(--force|-f\b)' && \
+   ! echo "$cmd" | grep -qE '\-\-force-with-lease' && \
+   echo "$cmd" | grep -qE '(main|master)'; then
+    echo "BLOCKED: Force push to main/master is not allowed (use --force-with-lease instead)"
     exit 2
 fi
 
