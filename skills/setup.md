@@ -32,10 +32,22 @@ description: 当用户首次使用模板、想配置项目信息、需要填写 
    > 你的测试文件放在哪个目录？
    （建议常见的如 tests、test、__tests__）
 
-   **问题 6：Lint 命令**
+   **问题 6：包管理器**
+   > 你用什么包管理器？
+   （根据技术栈推荐：Python → uv / pip、Node.js → npm / pnpm / yarn、Go → go mod）
+
+   **问题 7：Lint 命令**
    > 你用什么命令检查代码规范？比如 `ruff check .`、`eslint .`、`npx prettier --check .`
    > 如果还没有，可以先跳过，输入「无」
    （根据技术栈推荐对应的 lint 工具）
+
+   **问题 8：测试命令**
+   > 你用什么命令跑测试？比如 `pytest`、`npm test`、`go test ./...`
+   > 如果还没有，可以先跳过，输入「无」
+
+   **问题 9：运行环境**
+   > 你的项目跑在什么环境？比如本地 macOS、Docker、AWS EC2、Vercel 等
+   （如果用户不确定，默认写「本地开发」）
 
 3. 收集完所有信息后，替换 CLAUDE.md 中的所有 `{{placeholder}}`：
    - `{{project_name}}` → 用户回答的项目名称
@@ -43,7 +55,10 @@ description: 当用户首次使用模板、想配置项目信息、需要填写 
    - `{{project_description}}` → 用户回答的项目描述
    - `{{source_dir}}` → 用户回答的源代码目录
    - `{{test_dir}}` → 用户回答的测试目录
+   - `{{package_manager}}` → 用户回答的包管理器
    - `{{lint_command}}` → 用户回答的 lint 命令（如果用户说「无」或「跳过」，替换为「暂无」）
+   - `{{test_command}}` → 用户回答的测试命令（如果用户说「无」或「跳过」，替换为「暂无」）
+   - `{{environment}}` → 用户回答的运行环境
 
 4. 展示替换后的「项目基本信息」区块，让用户确认：
    > 配置完成，以下是你的项目信息，确认无误吗？
