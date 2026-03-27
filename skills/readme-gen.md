@@ -1,5 +1,5 @@
 ---
-name: readme
+name: readme-gen
 description: 当用户想写 README、生成项目文档、补充项目说明时使用 — 自动从代码中提取生成专业 README
 ---
 

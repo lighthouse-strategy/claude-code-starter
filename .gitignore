@@ -1,12 +1,62 @@
+# 环境变量和密钥
 .env
 .env.local
 .env.*.local
+.env.production
+.env.staging
+*.pem
+*.key
+*.p12
+
+# 依赖
 node_modules/
+.pnp/
+.pnp.js
+
+# Python
 __pycache__/
 *.pyc
-.DS_Store
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# 测试和覆盖率
+coverage/
+.coverage
+.pytest_cache/
+.nyc_output/
+htmlcov/
+
+# 构建产物
 dist/
 build/
+out/
+.next/
+.nuxt/
+.output/
+
+# Lint/Type 缓存
+.ruff_cache/
+.mypy_cache/
+.eslintcache
+
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 数据库
+*.sqlite3
+*.db
+
+# 日志
 *.log
+
+# Claude Code
+.claude/

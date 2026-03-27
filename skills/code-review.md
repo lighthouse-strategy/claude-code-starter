@@ -1,5 +1,5 @@
 ---
-name: review
+name: code-review
 description: 当用户想审查代码、检查代码质量、提交前 review、找 bug 时使用 — 从安全性、可读性、潜在 bug 三个维度审查代码
 ---
 
