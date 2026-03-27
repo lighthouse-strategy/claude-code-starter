@@ -55,13 +55,13 @@ if [ -z "$SKIP_CLAUDE_MD" ]; then
 fi
 
 # 下载 skills
-info "下载 36 个 Skills..."
+info "下载 37 个 Skills..."
 SKILLS=(
     a11y api auth blog changelog code-review commit compare
     component concept copy dashboard-admin database debug deploy doc
     email env explain fix form gitsetup install-plugins landing
-    migrate payment perf readme-gen refactor responsive script seo
-    setup starter storage test
+    learn migrate payment perf readme-gen refactor responsive script
+    seo setup starter storage test
 )
 
 mkdir -p .claude/skills

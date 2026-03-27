@@ -46,7 +46,7 @@ curl -fsSL https://raw.githubusercontent.com/lighthouse-strategy/claude-code-sta
 | 决策日志 | 记录技术决策，避免反复讨论 |
 | 已知陷阱 | 记录踩过的坑 |
 
-### Skills -- 36 个实用技能
+### Skills -- 37 个实用技能
 
 #### 从想法到上线
 
@@ -154,14 +154,15 @@ curl -fsSL https://raw.githubusercontent.com/lighthouse-strategy/claude-code-sta
 | test-writer | 测试生成：分析代码结构，生成覆盖全面的测试用例 |
 | explainer | 代码分析：深入分析项目架构和代码逻辑，通俗解释 |
 
-### Hooks -- 安全防护
+### Hooks -- 安全防护（零 token 消耗）
+
+所有 hooks 使用 shell 脚本实现，不消耗 API token，不增加延迟。
 
 | Hook | 触发时机 | 作用 |
 |------|---------|------|
 | 危险命令拦截 | 执行 Bash 前 | 拦截 rm -rf /、force push main 等危险操作 |
-| 敏感信息检测 | 写入/编辑文件前 | 检测硬编码的 API Key、密码、token |
-| Commit 格式检查 | Git commit 后 | 验证 commit message 是否符合 type: description 格式 |
-| 会话结束提醒 | 对话结束时 | 提醒未提交的更改和未完成的 TODO |
+| 敏感文件保护 | 写入/编辑文件前 | 阻止写入 .env、.pem、credentials 等敏感文件 |
+| 未提交提醒 | 对话结束时 | 检查 git status，提醒未提交的改动 |
 
 ## 全局规则
 

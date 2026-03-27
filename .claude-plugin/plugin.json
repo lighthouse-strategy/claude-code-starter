@@ -1,9 +1,9 @@
 {
   "name": "claude-code-starter",
   "version": "2.0.0",
-  "description": "Claude Code starter kit: CLAUDE.md templates, 36 Skills, Hooks, and Agents for Chinese-speaking developers",
+  "description": "Claude Code starter kit: CLAUDE.md templates, 37 Skills, 5 Commands, 4 Agents, Hooks for Chinese-speaking developers",
   "author": {
-    "name": "Xinguan Ying",
+    "name": "lighthouse-strategy",
     "url": "https://github.com/lighthouse-strategy"
   },
   "homepage": "https://github.com/lighthouse-strategy/claude-code-starter",
