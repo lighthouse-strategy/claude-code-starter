@@ -1,6 +1,6 @@
 # Claude Code Starter Kit
 
-让 Claude Code 更懂你的项目。开箱即用的 CLAUDE.md 模板、36 个 Skills、4 个 Agents、安全 Hooks。
+让 Claude Code 更懂你的项目。开箱即用的 CLAUDE.md 模板、37 个 Skills、4 个 Agents、5 个 Commands、安全 Hooks、3 套技术栈预设。
 
 ## 安装
 
@@ -121,8 +121,29 @@ curl -fsSL https://raw.githubusercontent.com/lighthouse-strategy/claude-code-sta
 
 | 命令 | 作用 |
 |------|------|
-| `/setup` | 配置 CLAUDE.md：交互式填写项目信息 |
+| `/setup` | 配置 CLAUDE.md：自动检测技术栈，选择预设模板 |
 | `/install-plugins` | 安装推荐的社区插件 |
+| `/learn` | 自我改进：踩坑后自动更新 CLAUDE.md 的已知陷阱和决策日志 |
+
+### Commands -- 5 个快捷命令
+
+| 命令 | 作用 |
+|------|------|
+| `/status` | 项目状态：git 状态 + TODO 列表 + 最近改动 |
+| `/plan` | 功能规划：拆解步骤 + 评估风险 + 输出可执行计划 |
+| `/checkpoint` | 进度保存：创建描述性的 git commit |
+| `/init` | 智能初始化：扫描项目自动生成 CLAUDE.md |
+| `/daily` | 每日启动：回顾昨天 + 检查未完成 + 聚焦今天 |
+
+### 技术栈预设 -- 3 套开箱即用模板
+
+| 预设 | 适用场景 |
+|------|---------|
+| Python/FastAPI | Python 后端：uv + ruff + pytest + SQLAlchemy + Pydantic |
+| Next.js/TypeScript | 全栈 Web：pnpm + ESLint + Tailwind + App Router |
+| 纯前端 HTML | 零框架：原生 HTML/CSS/JS，浏览器直接打开 |
+
+每套预设已预填该技术栈的代码规范、Lint 命令、测试命令、常见陷阱。运行 `/setup` 或 `/init` 自动匹配。
 
 ### Agents -- 4 个智能代理
 
