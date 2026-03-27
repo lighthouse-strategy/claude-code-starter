@@ -1,0 +1,50 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check if this Bash command contains any of these dangerous patterns: 'rm -rf /', 'rm -rf ~', 'rm -rf .', '> /dev/sda', 'mkfs', 'dd if=', ':(){:|:&};:'. Also check if it uses 'git push --force' to main or master branch. If any dangerous pattern is found, respond with 'BLOCK: [reason]'. Otherwise respond with nothing.",
+            "async": false
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check if the file being written or edited is a .env file, credentials file, or contains what appears to be a real API key, password, or secret token (not a placeholder or example). Look for patterns like 'sk-', 'ghp_', 'AKIA', long base64 strings assigned to KEY/SECRET/TOKEN variables. If sensitive content is found, respond with 'BLOCK: Sensitive content detected - [description]'. Otherwise respond with nothing.",
+            "async": false
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check if the Bash command that just ran was a git commit. If it was, verify: (1) the commit message follows the 'type: description' convention (feat/fix/docs/refactor/test/chore), (2) the commit message is not empty or auto-generated garbage. If the commit message format is wrong, suggest the correct format but do NOT block. Respond with the suggestion or nothing if correct.",
+            "async": true
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Before this session ends, check: (1) Are there any unstaged changes that should be committed? Run 'git status' mentally. (2) Were any TODO items mentioned but not completed? If there are important uncommitted changes or open TODOs, briefly remind the user. Keep it to 1-2 sentences. If everything is clean, respond with nothing.",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
