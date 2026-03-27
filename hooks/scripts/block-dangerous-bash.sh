@@ -4,8 +4,8 @@
 
 input=$(cat)
 
-# 提取命令内容
-cmd=$(echo "$input" | grep -oP '"command"\s*:\s*"[^"]*"' | head -1 | sed 's/"command"\s*:\s*"//;s/"$//')
+# 提取命令内容（兼容 macOS/Linux，不依赖 grep -P）
+cmd=$(echo "$input" | sed -n 's/.*"command"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' | head -1)
 
 # 如果提取不到，尝试直接用全文
 if [ -z "$cmd" ]; then

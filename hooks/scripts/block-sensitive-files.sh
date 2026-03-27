@@ -4,8 +4,8 @@
 
 input=$(cat)
 
-# 提取文件路径
-filepath=$(echo "$input" | grep -oP '"file_path"\s*:\s*"[^"]*"' | head -1 | sed 's/"file_path"\s*:\s*"//;s/"$//')
+# 提取文件路径（兼容 macOS/Linux，不依赖 grep -P）
+filepath=$(echo "$input" | sed -n 's/.*"file_path"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' | head -1)
 
 if [ -z "$filepath" ]; then
     exit 0
