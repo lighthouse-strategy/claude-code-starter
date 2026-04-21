@@ -145,6 +145,20 @@ curl -fsSL https://raw.githubusercontent.com/lighthouse-strategy/claude-code-sta
 
 每套预设已预填该技术栈的代码规范、Lint 命令、测试命令、常见陷阱。运行 `/setup` 或 `/init` 自动匹配。
 
+### 垂直行业模板
+
+叠加在项目 CLAUDE.md 之上的行为规范，不替换。适合在特定领域（金融、医疗等）做开发时追加约束。
+
+| 模板 | 适用场景 | 5 条核心原则 |
+|------|---------|------------|
+| `templates/CFA-CLAUDE.md` | 量化、投研、金融工程（CFA/CQF 视角） | Time Discipline · Source of Truth · Risk Before Returns · Compliance by Default · Institutional Reproducibility |
+
+安装方式：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/lighthouse-strategy/claude-code-starter/main/templates/CFA-CLAUDE.md >> CLAUDE.md
+```
+
 ### Agents -- 4 个智能代理
 
 | Agent | 作用 |
